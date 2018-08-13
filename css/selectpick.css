@@ -1,0 +1,127 @@
+@CHARSET "UTF-8";
+
+/*外面边框的样式*/
+
+.selectpick_div {
+    background-color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    border: solid 1px #959595;
+    line-height: 32px;
+    text-align: center;
+    /* padding-left: 5px; */
+    text-indent: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 9060;
+    height: 32px !important;
+    width: 100% !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+}
+
+.selectpick_icon {
+    float: right;
+    background: url(../img/select_down.png) no-repeat 0px 13px;
+    height: 32px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+/*下拉框的主体*/
+
+.selectpick_options {
+    border: solid 1px #ccc;
+    border-bottom: none;
+    position: absolute;
+    z-index: 9060;
+    font-size: 13.5px;
+    /*text-align:center;*/
+    display: none;
+}
+
+.selectpick_options ul {
+    list-style: none;
+    height: auto;
+    max-height: 280px;
+    overflow-y: auto;
+    margin: 0px;
+    padding: 0px;
+    z-index: 9060;
+    font-size: 13.5px;
+}
+
+.selectpick_options ul li {
+    border-bottom: solid 1px #CFCFCF;
+    padding-left: 21px;
+    display: block;
+    font-size: 13.5px;
+    z-index: 9060;
+    background-color: #fff;
+}
+
+.selectpick_options li:hover {
+    background-color: #0069b4;
+    color: #fff;
+}
+
+.selectpick_options ul li.selectpick_options_selected {
+    background-color: #0069b4;
+    color: #fff;
+    z-index: 9060;
+}
+
+
+/*设置为disabled的时候*/
+
+.selectpick_no_select {
+    cursor: default;
+    color: #9a9898;
+    background-color: #F5F5F5;
+}
+
+
+/*设置下拉框的不透明度*/
+
+.select_hide {
+    display: none;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+/*其他*/
+
+.selectpick_options {
+    width: 100% !important;
+}
+
+.selectpick_options li {
+    cursor: pointer;
+    border-bottom: solid 1px #ccc !important;
+}
+
+.selectpick_options li label {
+    cursor: pointer;
+}
+
+.selectpick_div_box {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    position: relative;
+}
+
+.r-con-right .tab_box>div div .selectpick_div {
+    width: 100% !important;
+}
+
+.selectpick_div_box {
+    width: 96%;
+}
